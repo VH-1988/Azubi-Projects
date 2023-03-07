@@ -1,0 +1,182 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.all{
+    max-width: 95%;
+    margin: auto;
+}
+.clr{
+    clear: both;
+}
+button{
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    padding: 8px;
+}
+.clientbtn{
+    background-color:  rgb(221, 219, 219);
+    color: black;
+    border: none;
+}
+.heading01{
+    position: relative;
+}
+.header a {
+    color: rgb(92, 91, 91);
+    text-decoration: none;
+    padding: 9px 20px;
+    font-size: 20px;
+}
+.header{
+    z-index: 1;
+    padding: 12px 24px;
+    background-color: white;
+    border: lightgray;
+    position: fixed;
+    width: 100%;
+}
+.header :hover{
+    color: rgb(92, 91, 91);
+    background-color: lightgray;
+    text-decoration: none;   
+}
+.left{
+    float: left;       
+}
+.right{
+    float: right;
+    margin-right: 30px;       
+}
+.heading01 img{
+    max-width: 100%;
+    margin: 0;
+}
+.map img{
+    max-width: 100%;
+}
+.heading01 strong{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+.heading01 h1{
+    position: absolute;
+    top: 40%;
+    left: 36%;
+}
+.projects img{
+    float: left;
+    width: 25%;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+.projects02 img{
+    float: left;
+    width: 25%;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+.box01{
+    position: relative;
+}
+.box01 button{
+    position: absolute;
+    left: 0%;
+}
+.box02{
+    position: relative;
+}
+.box02 button{
+    position: absolute;
+    left: 25%;
+}
+.box03{
+    position: relative;
+}
+.box03 button{
+    position: absolute;
+    left: 49.99%;
+}
+.box04{
+    position: relative;
+}
+.box04 button{
+    position: absolute;
+    left: 75%;
+}
+.box05{
+    position: relative;
+}
+.box05 button{
+    position: absolute;
+    left: 0%;
+}
+.box06{
+    position: relative;
+}
+.box06 button{
+    position: absolute;
+    left: 25%;
+}
+.box07{
+    position: relative;
+}
+.box07 button{
+    position: absolute;
+    left: 49.99%;
+}
+.box08{
+    position: relative;
+}
+.box08 button{
+    position: absolute;
+    left: 75%;
+}
+.block{
+    float: left;
+    width: 25%;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.about p{
+    font-size: 16px;
+}
+.about h2{
+    font-size: 25px;
+}
+.about h3{
+    font-size: 18px;
+    color: rgb(156, 156, 156);
+    font-weight: 100;
+}
+.block img{
+    width: 100%;
+}
+.block button{
+    width: 100%;
+}
+.contact input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: rgb(156, 156, 156);
+}
+.contact button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.footer a{
+    color: white;
+}

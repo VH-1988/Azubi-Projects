@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 1: Selectors Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="body">
+    <img id="img" src="image01.jpg" alt="page logo">
+
+    <h2><b class="red">About</b></h2>
+    <p>It can be intimidating for women to and ask questions when theu are in an <br> 
+        <b class="red">extreme minority</b>. While open and welcoming, today's budding developer <br>
+        community is up to <b class="red">91% male</b>. If we can empower more females with the confidence <br>
+        in their technological capabilities <small class="italic">we can begin to change this landscape</small>.</p>
+
+    <h3 class="red">Our Locations</h3>
+        <ul>
+            <li>USA</li>
+                <ul>
+                    <li class="bullet"><a href="">New York</a></li>
+                    <li class="bullet"><a href="">Columbus</a></li>
+                    <li class="bullet"><a href="">Austin</a></li>
+                    <li class="bullet"><a href="">Philly</a></li>
+                </ul>
+
+            <li>World</li>
+                <ul>
+                    <li class="bullet"><a href="">Ottawa</a></li>
+                    <li class="bullet"><a href="">Sydney</a></li>
+                </ul>
+        </ul>
+
+    <h3 class="red">Upcoming Classes</h3>
+        <table class="border">
+            <tr>
+                <th class="border">Location</th>
+                <th class="border">Topic</th>
+            </tr>
+            <tr>
+                <td class="borderBlue">New York</td>
+                <td class="borderRed">JavaScript & jQuery</td>
+            </tr>
+            <tr>
+                <td class="borderBlue">New York</td>
+                <td class="borderRed">HTML & CSS</td>
+            </tr>
+        </table>
+
+    <h3>Sign Up!</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email"><br>
+    <label for="location">Location</label>
+    <select name="location" id="location">
+        <option value="default">(select your location)</option>
+        <option value="location">New York</option>
+        <option value="location">Columbus</option>
+        <option value="location">Austin</option>
+        <option value="location">Philly</option>
+        <option value="location">Ottawa</option>
+        <option value="location">Sydney</option>
+    </select><br>    
+    <div class="gender">Gender: <br>
+        Female<input type="radio" name="gender" id="female">
+        Male<input type="radio" name="gender" id="male">            
+    </div>
+    <label for="experience">Experience:</label> <br>
+    <textarea name="experience" id="experience" cols="15" rows="1"></textarea> <br>
+    <button type="submit" id="submit">Sign Up</button><br>
+
+    <a href="" id="twitter">Twitter</a>|<a href="">Facebook</a>|<a href="">Flickr</a>
+</div>
+<button>Show Solution</button>
+    
+</body>
+</html>

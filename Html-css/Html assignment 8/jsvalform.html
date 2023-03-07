@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Validation Form</title>
+</head>
+<body>
+    <form action="">
+        <label for="fullname">Full Name:</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter full name" >
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="Male" value="male">Male
+        <input type="radio" name="gender" id="Female" value="female">Female
+        <br><br>
+        <label for="tel">Telephone:</label>
+        <input type="text" name="tel" id="tel" placeholder="Enter telephone number">
+        <br><br>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Enter email address">
+        <br><br>
+        <label for="nationality">Nationality:</label>
+        <select name="nationality" id="nationality">
+            <option>(please select a country)</option>
+            <option>Lesoto</option>
+            <option>Zimbabwe</option>
+            <option>Namibia</option>
+            <option>Botswane</option>
+            <option>Swaziland</option>
+        </select>
+        <br><br>
+        <label for="address">Address:</label><br>
+        <textarea name="address" id="address" placeholder="Enter your Address"></textarea>
+        <br><br>
+        <label for="image">Image Upload:</label>
+        <input type="file" name="image" id="image">
+        <br><br>
+        <label for="educational">Educational Levels:</label><br>
+        <input type="checkbox">Hign School
+        <input type="checkbox">Collage
+        <input type="checkbox">Univarsity
+        <br><br>
+        <button id="submit" name="submit" onclick="submitForm()">Submit</button>
+    </form>
+    <script>
+        function submitForm(){
+            var fullname = document.getElementById("fullname").value;
+            var tel = document.getElementById("tel").value;
+            var email = document.getElementById("email").value;
+            if(fullname == ""){
+                alert('Please enter full name');
+            }
+            if(tel == ""){
+                alert('Please enter telephone number');
+            }
+            if(email == ""){
+                alert('Please enter email address');
+            }
+            else{
+                alert('Form Submited')
+            }
+        }
+    </script>
+</body>
+</html>

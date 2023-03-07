@@ -1,0 +1,765 @@
+.clr{
+    clear: both;
+}
+body{
+    margin: 0%;
+}
+body h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 3% 0% 0% 0%;
+}
+body p{
+    margin:3% 0% 0% 0%;
+    font-size: 19px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 110px;
+    background-color: white;
+}
+#lines{
+    width: 40px;
+    height: 40px;
+    border-radius: 21px;
+    position: fixed;
+    left: 1.2%;
+    top: 2%;
+}
+.lineshade{
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 21px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    left: 1.2%;
+    top: 2%;
+    border: none;
+}
+.lineshade:hover{
+    opacity: 1;
+}
+#home{
+    height: 40px;
+    position: fixed;
+    top: 2%;
+    left: 5%;
+    margin: 1px;
+}
+.homeshade::before,
+.homeshade::after{
+    position: absolute;
+    content: 'YouTube Home';
+    top: 70%;
+    height: 15px;
+    width: 100px;
+    font-size: 0.5em;
+    padding: 1px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    transform: translateX(0%);
+    transition-delay: 1s;
+}
+.homeshade{
+    z-index: 1;
+    height: 40px;
+    width: 130px;
+    left: 5%;
+    top: 2%;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0);
+    opacity: 0;
+    cursor: pointer;
+    border: none;
+}
+.homeshade:hover{
+    opacity: 1;
+}
+#search{
+    height: 38px;
+    width: 513px;
+    position: fixed;
+    left: 25%;
+    top: 2%;
+    border: 1px lightgrey solid;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+}
+#searchbtn{
+    height: 40px;
+    left: 63%;
+    top: 2%;
+    position: fixed;
+    border: 1px lightgrey solid;
+    border-bottom-right-radius: 21px;
+    border-top-right-radius: 21px;
+}
+.searchshade{
+    z-index: 1;
+    height: 40px;
+    width: 68px;
+    left: 63%;
+    top: 2%;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    cursor: pointer;
+    border: none;
+    border-bottom-right-radius: 21px;
+    border-top-right-radius: 21px;
+}
+.searchshade::before,
+.searchshade::after{
+    position: absolute;
+    content: 'search';
+    top: 150%;
+    height: 25px;
+    width: 50px;
+    font-size: 15px;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.4);
+    transform: translateX(-50%);
+}
+.searchshade:hover{
+    opacity: 1;
+}
+#micbtn{
+    width: 40px;
+    height: 40px;
+    left: 68.5%;
+    top: 2%;
+    position: fixed;
+    border-radius: 21px;
+}
+.micshade{
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    left: 68.6%;
+    top: 2%;
+    cursor: pointer;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+    opacity: 0;
+}
+.micshade::before,
+.micshade::after{
+    position: absolute;
+    content: 'search with your voice';
+    top: 150%;
+    height: 25px;
+    width: 150px;
+    font-size: 15px;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.4);
+    transform: translateX(-50%);
+}
+.micshade:hover{
+    opacity: 1;
+}
+#createbtn{
+    width: 40px;
+    height: 40px;
+    left: 88%;
+    top: 2%;
+    position: fixed;
+    border-radius: 21px;
+}
+.createshade{
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    left: 88%;
+    top: 2%;
+    cursor: pointer;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+    opacity: 0;
+}
+.createshade::before,
+.createshade::after{
+    position: absolute;
+    content: 'create';
+    top: 150%;
+    height: 25px;
+    width: 50px;
+    font-size: 15px;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.4);
+    transform: translateX(-50%);
+}
+.createshade:hover{
+    opacity: 1;
+}
+#bellbtn{
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    left: 91.5%;
+    top: 2%;
+    position: fixed;
+    border-radius: 21px;
+}
+.bellshade{
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    left: 91.5%;
+    top: 2%;
+    cursor: pointer;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+    opacity: 0;
+}
+.bellshade::before,
+.bellshade::after{
+    position: absolute;
+    content: 'notifications';
+    top: 150%;
+    height: 25px;
+    width: 80px;
+    font-size: 15px;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.4);
+    transform: translateX(-50%);
+}
+.bellshade:hover{
+    opacity: 1;
+}
+#accountbtn{
+    width: 40px;
+    height: 40px;
+    left: 95%;
+    top: 2%;
+    position: fixed;
+}
+#allbtn{
+    width: 40px;
+    height: 35px;
+    border-radius: 5px;
+    position: fixed;
+    left: 7.1%;
+    top: 10%;
+}
+#musicbtn{
+    width: 65px;
+    height: 35px;
+    border-radius: 5px;
+    position: fixed;
+    left: 11%;
+    top: 10%;
+}
+.musicbtnshade{
+    z-index: 1;
+    width: 65px;
+    height: 35px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    left: 11%;
+    top: 10%;
+    border: none;
+}
+.musicbtnshade:hover{
+    opacity: 1;
+}
+#gamesbtn{
+    width: 75px;
+    height: 35px;
+    border-radius: 5px;
+    position: fixed;
+    left: 16.5%;
+    top: 10%;
+}
+.gamesbtnshade{
+    z-index: 1;
+    width: 75px;
+    height: 35px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    left: 16.5%;
+    top: 10%;
+    border: none;
+}
+.gamesbtnshade:hover{
+    opacity: 1;
+}
+#reactbtn{
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    position: fixed;
+    left: 22.7%;
+    top: 10%;
+}
+.reactbtnshade{
+    z-index: 1;
+    width: 130px;
+    height: 35px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    left: 22.7%;
+    top: 10%;
+    border: none;
+}
+.reactbtnshade:hover{
+    opacity: 1;
+}
+#elonbtn{
+    width: 85px;
+    height: 35px;
+    border-radius: 5px;
+    position: fixed;
+    left: 33%;
+    top: 10%;
+}
+.elonbtnshade{
+    z-index: 1;
+    width: 85px;
+    height: 35px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    left: 33%;
+    top: 10%;
+    border: none;
+}
+.elonbtnshade:hover{
+    opacity: 1;
+}
+#skyrimbtn{
+    width: 170px;
+    height: 35px;
+    border-radius: 5px;
+    position: fixed;
+    left: 40%;
+    top: 10%;
+}
+.skyrimbtnshade{
+    z-index: 1;
+    width: 170px;
+    height: 35px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    left: 40%;
+    top: 10%;
+    border: none;
+}
+.skyrimbtnshade:hover{
+    opacity: 1;
+}
+#nastycbtn{
+    width: 65px;
+    height: 35px;
+    border-radius: 5px;
+    position: fixed;
+    left: 53%;
+    top: 10%;
+}
+.nastycbtnshade{
+    z-index: 1;
+    width: 65px;
+    height: 35px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    left: 53%;
+    top: 10%;
+    border: none;
+}
+.nastycbtnshade:hover{
+    opacity: 1;
+}
+#next{
+    width: 40px;
+    height: 40px;
+    border-radius: 21px;
+    position: fixed;
+    left: 97%;
+    top: 10%;
+}
+.nextshade{
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 21px;
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    left: 97%;
+    top: 10%;
+    border: none;
+}
+.nextshade::before,
+.nextshade::after{
+    position: absolute;
+    content: 'next';
+    top: 150%;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.4);
+    transform: translateX(-50%);
+}
+.nextshade:hover{
+    opacity: 1;
+}
+#homebtn{
+    width: 50px;
+    height: 50px;
+    left: 1%;
+    top: 15%;
+    position: fixed;
+}
+.homebtnshade{
+    z-index: 1;
+    width: 68px;
+    height: 73px;
+    background-color: rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 5px;
+    left: 0.3%;
+    top: 13.5%;
+    border: none;
+}
+.homebtnshade:hover{
+    opacity: 1;
+}
+#shorts{
+    width: 50px;
+    height: 50px;
+    left: 1%;
+    top: 25%;
+    position: fixed;
+}
+.shortshade{
+    z-index: 1;
+    width: 68px;
+    height: 73px;
+    background-color: rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 5px;
+    left: 0.3%;
+    top: 23.5%;
+    border: none;
+}
+.shortshade:hover{
+    opacity: 1;
+}
+#subs{
+    width: 60px;
+    height: 50px;
+    left: 0.5%;
+    top: 35%;
+    position: fixed;
+}
+.subshade{
+    z-index: 1;
+    width: 68px;
+    height: 73px;
+    background-color: rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 5px;
+    left: 0.3%;
+    top: 33.5%;
+    border: none;
+}
+.subshade:hover{
+    opacity: 1;
+}
+#library{
+    width: 50px;
+    height: 50px;
+    left: 1%;
+    top: 45%;
+    position: fixed;
+}
+.libraryshade{
+    z-index: 1;
+    width: 68px;
+    height: 73px;
+    background-color: rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 5px;
+    left: 0.3%;
+    top: 43.5%;
+    border: none;
+}
+.libraryshade:hover{
+    opacity: 1;
+}
+.blocks{
+    top: 120px;
+    margin: 0%;
+    padding: 0%;
+    z-index: 0;
+    position: absolute;
+    left: 6%;
+    width: 92%;
+    right: 2%;
+}
+.thumbs{
+    margin: 1%;
+    float: left;
+    width: 23%;
+    box-sizing: border-box;
+}
+#firstimg{
+    width: 300px;
+    height: 170px;
+    border-radius: 20px;
+}
+#secondimg{
+    width: 300px;
+    height: 170px;
+    border-radius: 20px;
+}
+#thirdimg{
+    width: 300px;
+    height: 170px;
+    border-radius: 20px;
+}
+#forthimg{
+    width: 300px;
+    height: 170px;
+    border-radius: 20px;
+}
+.blocksec{
+    position: absolute;
+    top: 450px;
+    left: 6%;
+    width: 92%;
+    right: 2%;
+}
+.thumbsec{
+    margin: 1%;
+    float: left;
+    width: 23%;
+    box-sizing: border-box;
+}
+#fifthimg{
+    width: 300px;
+    height: 170px;
+    border-radius: 20px;
+}
+#sixthimg{
+    width: 300px;
+    height: 170px;
+    border-radius: 20px;
+}
+#seventhimg{
+    width: 300px;
+    height: 170px;
+    border-radius: 20px;
+}
+#eigthimg{
+    width: 300px;
+    height: 170px;
+    border-radius: 20px;
+}
+#linediv{
+    top: 770px;
+    margin: 0%;
+    padding: 0%;
+    z-index: 0;
+    position: absolute;
+    left: 6%;
+    width: 94%;
+}
+.blockthird{
+    position: absolute;
+    top: 850px;
+    left: 6%;
+    width: 94%;
+}
+.thumbthird{
+    margin: 1%;
+    float: left;
+    width: 14.5%;
+    box-sizing: border-box;
+}
+#shortsbtn{
+    top: 800px;
+    margin: 0%;
+    padding: 0%;
+    z-index: 0;
+    position: absolute;
+    left: 7%;
+    width: 85px;
+}
+.time1::before,
+.time1::after{
+    position: absolute;
+    content: '11:05';
+    top: 150px;
+    left: 22.5%;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0,1);
+    transform: translateX(-50%);
+}
+.time2::before,
+.time2::after{
+    position: absolute;
+    content: '1:59';
+    top: 150px;
+    left: 47.1%;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0,1);
+    transform: translateX(-50%);
+}
+.time3::before,
+.time3::after{
+    position: absolute;
+    content: '18:40';
+    top: 150px;
+    left: 72.5%;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0,1);
+    transform: translateX(-50%);
+}
+.time4::before,
+.time4::after{
+    position: absolute;
+    content: '6:20';
+    top: 150px;
+    left: 98%;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0,1);
+    transform: translateX(-50%);
+}
+.time5::before,
+.time5::after{
+    position: absolute;
+    content: '39:59';
+    top: 150px;
+    left: 22.5%;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0,1);
+    transform: translateX(-50%);
+}
+.time6::before,
+.time6::after{
+    position: absolute;
+    content: '1:40:59';
+    top: 150px;
+    left: 47.1%;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0,1);
+    transform: translateX(-50%);
+}
+.time7::before,
+.time7::after{
+    position: absolute;
+    content: '5:27';
+    top: 150px;
+    left: 73%;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0,1);
+    transform: translateX(-50%);
+}
+.time8::before,
+.time8::after{
+    position: absolute;
+    content: '5:25:30';
+    top: 150px;
+    left: 97%;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0,1);
+    transform: translateX(-50%);
+}
